@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1.0, width=device-width">
+    <title>Admin panel</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&amp;amp;subset=cyrillic" rel="stylesheet">
+    <script src="https://www.gstatic.com/charts/loader.js"></script>
+    <link rel="stylesheet" href="stylesheets/common.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="header__content">
+            <div class="logo"><a class="logo__link" href="home.html"><svg class="logo__img">
+                        <use xlink:href="images/svg-sprite/svg-sprite.svg#logo"></use>
+                    </svg></a></div>
+            <div class="header__nav">
+                <nav class="nav-site">
+                    <ul class="nav-site__list">
+                        <li class="nav-site__item nav-site__item--menu"><button class="button nav-site__button-arrow" type="button"><svg class="nav-site__arrow-img">
+                                    <use xlink:href="images/svg-sprite/svg-sprite.svg#header-arrow"></use>
+                                </svg></button><button class="button nav-site__button-menu" type="button"><img class="nav-site__button-img" src="images/small-img/burger.svg" alt="Menu"></button></li>
+                        <li class="nav-site__item nav-site__item--search">
+                            <form class="nav-site__form"><button class="button nav-site__button-search" type="button"><img class="nav-site__button-img" src="images/small-img/search.svg" alt="Search"></button><input class="nav-site__field-search" type="text"></form>
+                        </li>
+                    </ul>
+                    <div class="nav-site__menu">
+                        <ul class="nav-site__menu-list">
+                            <li class="nav-site__menu-item"><a class="nav-site__menu-link" href="#5">Home</a></li>
+                            <li class="nav-site__menu-item"><a class="nav-site__menu-link" href="#5">Home</a></li>
+                            <li class="nav-site__menu-item"><a class="nav-site__menu-link" href="#5">Home</a></li>
+                        </ul>
+                    </div>
+                </nav>
+                <nav class="nav-user">
+                    <ul class="nav-user__list">
+                        <li class="nav-user__item nav-user__item--add-project"><button class="button button--text button--background button--ellipse button--size-less nav-user__button" type="button">Add project<img class="nav-user__button-img" src="images/small-img/plus.png" alt="Add"></button></li>
+                        <li class="nav-user__item nav-user__item--messages"><a class="nav-user__messages-link" href="#5"><img class="nav-user__messages-img" src="images/small-img/messages.svg" alt="Messages"></a></li>
+                        <li class="nav-user__item nav-user__item--notifications"><span class="nav-user__quality">3</span><button class="button nav-user__notifications-button"><img class="nav-user__notifications-img" src="images/small-img/notifications.svg" alt="Notifications"></button></li>
+                        <li class="nav-user__item nav-user__item--profile"><a class="nav-user__profile-link" href="#5"><img class="nav-user__profile-photo" src="images/user/profile.jpg" alt="User"></a><button class="nav-user__button-arrow" type="button"><svg class="nav-user__arrow-img">
+                                    <use xlink:href="images/svg-sprite/svg-sprite.svg#profile-arrow"></use>
+                                </svg></button></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <main class="main">
+        <nav class="nav-panel">
+            <ul class="nav-panel__list">
+                <li class="nav-panel__item"><img class="nav-panel__icon" src="images/small-img/home.svg" alt="Icon nav panel"><a class="nav-panel__link" href="home.html">Home</a></li>
+                <li class="nav-panel__item"><img class="nav-panel__icon" src="images/small-img/workflow.svg" alt="Icon nav panel"><a class="nav-panel__link" href="workflow.html">Workflow</a></li>
+                <li class="nav-panel__item"><img class="nav-panel__icon" src="images/small-img/statistics.svg" alt="Icon nav panel"><a class="nav-panel__link" href="statistics.html">Statistics</a></li>
+                <li class="nav-panel__item"><img class="nav-panel__icon" src="images/small-img/calendar.svg" alt="Icon nav panel"><a class="nav-panel__link" href="calendar.html">Calendar</a></li>
+                <li class="nav-panel__item nav-panel__item--active"><img class="nav-panel__icon" src="images/small-img/users.svg" alt="Icon nav panel"><a class="nav-panel__link" href="users.html">Users</a></li>
+                <li class="nav-panel__item"><img class="nav-panel__icon" src="images/small-img/settings.svg" alt="Icon nav panel"><a class="nav-panel__link" href="#5.html">Settings</a></li>
+            </ul>
+        </nav>
+        <div class="box content content--users">
+            <div class="users">
+                <div class="users__header content__header">
+                    <div class="users__title-content">
+                        <h1 class="users__title">Users <span class="users__quality">(128)</span></h1>
+                    </div>
+                    <div class="users__select-content">
+                        <form class="users__form" action="#5" method="post">
+                            <div class="content__header-container-select"><select class="content__header-select users__select">
+                                    <option class="users__option">Sort: Active first</option>
+                                    <option class="users__option">Sort: Active first</option>
+                                    <option class="users__option">Sort: Active first</option>
+                                </select></div>
+                        </form>
+                    </div>
+                </div>
+                <div class="users__body">
+                    <table class="users-table users__list">
+                        <tr class="users-table__tr">
+                            <th class="users-table__th">Name</th>
+                            <th class="users-table__th users-table__th--activity">Last activity</th>
+                            <th class="users-table__th users-table__th--mail">Mail</th>
+                            <th class="users-table__th users-table__th--phone">Phone</th>
+                            <th class="users-table__th"></th>
+                        </tr>
+                        <tr class="user-information">
+                            <td class="card user-information__td user-information__td--avatar">
+                                <div class="user-information__content-td">
+                                    <div class="user-information__avatar"><img class="user-information__photo" src="images/user/photo-5.jpg" alt="User"></div>
+                                    <div class="user-information__block-name">
+                                        <p class="user-information__name">John Doe</p>
+                                        <p class="user-information__profession">CEO</p>
+                                    </div>
+                                </div>
+                            </td>
+                            <td class="card user-information__td user-information__td--activity">
+                                <div class="user-information__activity"><img class="user-information__time" src="images/small-img/online.png" alt="Time">
+                                    <p class="user-information__activity-text user-information__activity-text--online">Online now!</p>
+                                </div>
+                            </td>
+                            <td class="card user-information__td user-information__td--mail"><a class="user-information__mail" href="mailto:johndoe@design.com">johndoe@design.com</a></td>
+                            <td class="card user-information__td user-information__td--phone"><a class="user-information__phone" href="tel:(000)111222333">(000) 111 222 333</a></td>
+                            <td class="card user-information__td user-information__td--options"><button class="button user-information__button" type="button"><img class="user-information__img-options" src="images/small-img/options.png" alt="Options"></button></td>
+                        </tr>
+                        <tr class="user-information">
+                            <td class="card user-information__td user-information__td--avatar">
+                                <div class="user-information__content-td">
+                                    <div class="user-information__avatar"><img class="user-information__photo" src="images/user/photo-6.jpg" alt="User"></div>
+                                    <div class="user-information__block-name">
+                                        <p class="user-information__name">Nina Jones</p>
+                                        <p class="user-information__profession">UX Designer</p>
+                                    </div>
+                                </div>
+                            </td>
+                            <td class="card user-information__td user-information__td--activity">
+                                <div class="user-information__activity"><img class="user-information__time" src="images/small-img/online.png" alt="Time">
+                                    <p class="user-information__activity-text user-information__activity-text--online">Online now!</p>
+                                </div>
+                            </td>
+                            <td class="card user-information__td user-information__td--mail"><a class="user-information__mail" href="mailto:ninajones@design.com">ninajones@design.com</a></td>
+                            <td class="card user-information__td user-information__td--phone"><a class="user-information__phone" href="tel:(000)111222333">(000) 111 222 333</a></td>
+                            <td class="card user-information__td user-information__td--options"><button class="button user-information__button" type="button"><img class="user-information__img-options" src="images/small-img/options.png" alt="Options"></button></td>
+                        </tr>
+                        <tr class="user-information">
+                            <td class="card user-information__td user-information__td--avatar">
+                                <div class="user-information__content-td">
+                                    <div class="user-information__avatar"><img class="user-information__photo" src="images/user/photo-7.jpg" alt="User"></div>
+                                    <div class="user-information__block-name">
+                                        <p class="user-information__name">Alex Smith</p>
+                                        <p class="user-information__profession">Web Designer</p>
+                                    </div>
+                                </div>
+                            </td>
+                            <td class="card user-information__td user-information__td--activity">
+                                <div class="user-information__activity"><img class="user-information__time" src="images/small-img/online.png" alt="Time">
+                                    <p class="user-information__activity-text user-information__activity-text--online">Online now!</p>
+                                </div>
+                            </td>
+                            <td class="card user-information__td user-information__td--mail"><a class="user-information__mail" href="mailto:alexsmith@design.com">alexsmith@design.com</a></td>
+                            <td class="card user-information__td user-information__td--phone"><a class="user-information__phone" href="tel:(000)111222333">(000) 111 222 333</a></td>
+                            <td class="card user-information__td user-information__td--options"><button class="button user-information__button" type="button"><img class="user-information__img-options" src="images/small-img/options.png" alt="Options"></button></td>
+                        </tr>
+                        <tr class="user-information">
+                            <td class="card user-information__td user-information__td--avatar">
+                                <div class="user-information__content-td">
+                                    <div class="user-information__avatar"><img class="user-information__photo" src="images/user/photo-8.jpg" alt="User"></div>
+                                    <div class="user-information__block-name">
+                                        <p class="user-information__name">Ann Clooney</p>
+                                        <p class="user-information__profession">Account Manager</p>
+                                    </div>
+                                </div>
+                            </td>
+                            <td class="card user-information__td user-information__td--activity">
+                                <div class="user-information__activity"><img class="user-information__time" src="images/small-img/offline.png" alt="Time">
+                                    <p class="user-information__activity-text">20 minutes ago</p>
+                                </div>
+                            </td>
+                            <td class="card user-information__td user-information__td--mail"><a class="user-information__mail" href="mailto:annclooney@design.com">annclooney@design.com</a></td>
+                            <td class="card user-information__td user-information__td--phone"><a class="user-information__phone" href="tel:(000)111222333">(000) 111 222 333</a></td>
+                            <td class="card user-information__td user-information__td--options"><button class="button user-information__button" type="button"><img class="user-information__img-options" src="images/small-img/options.png" alt="Options"></button></td>
+                        </tr>
+                        <tr class="user-information">
+                            <td class="card user-information__td user-information__td--avatar">
+                                <div class="user-information__content-td">
+                                    <div class="user-information__avatar"><img class="user-information__photo" src="images/user/photo-9.jpg" alt="User"></div>
+                                    <div class="user-information__block-name">
+                                        <p class="user-information__name">Patric Smith</p>
+                                        <p class="user-information__profession">Project Manager</p>
+                                    </div>
+                                </div>
+                            </td>
+                            <td class="card user-information__td user-information__td--activity">
+                                <div class="user-information__activity"><img class="user-information__time" src="images/small-img/offline.png" alt="Time">
+                                    <p class="user-information__activity-text">40 minutes ago</p>
+                                </div>
+                            </td>
+                            <td class="card user-information__td user-information__td--mail"><a class="user-information__mail" href="mailto:patricksmith@design.com">patricksmith@design.com</a></td>
+                            <td class="card user-information__td user-information__td--phone"><a class="user-information__phone" href="tel:(000)111222333">(000) 111 222 333</a></td>
+                            <td class="card user-information__td user-information__td--options"><button class="button user-information__button" type="button"><img class="user-information__img-options" src="images/small-img/options.png" alt="Options"></button></td>
+                        </tr>
+                        <tr class="user-information">
+                            <td class="card user-information__td user-information__td--avatar">
+                                <div class="user-information__content-td">
+                                    <div class="user-information__avatar"><img class="user-information__photo" src="images/user/photo-10.jpg" alt="User"></div>
+                                    <div class="user-information__block-name">
+                                        <p class="user-information__name">Nicky Hunt</p>
+                                        <p class="user-information__profession">Product Designer</p>
+                                    </div>
+                                </div>
+                            </td>
+                            <td class="card user-information__td user-information__td--activity">
+                                <div class="user-information__activity"><img class="user-information__time" src="images/small-img/offline.png" alt="Time">
+                                    <p class="user-information__activity-text">1 hour ago</p>
+                                </div>
+                            </td>
+                            <td class="card user-information__td user-information__td--mail"><a class="user-information__mail" href="mailto:nickyhunt@design.com">nickyhunt@design.com</a></td>
+                            <td class="card user-information__td user-information__td--phone"><a class="user-information__phone" href="tel:(000)111222333">(000) 111 222 333</a></td>
+                            <td class="card user-information__td user-information__td--options"><button class="button user-information__button" type="button"><img class="user-information__img-options" src="images/small-img/options.png" alt="Options"></button></td>
+                        </tr>
+                        <tr class="user-information">
+                            <td class="card user-information__td user-information__td--avatar">
+                                <div class="user-information__content-td">
+                                    <div class="user-information__avatar"><img class="user-information__photo" src="images/user/photo-11.jpg" alt="User"></div>
+                                    <div class="user-information__block-name">
+                                        <p class="user-information__name">Jane Doe</p>
+                                        <p class="user-information__profession">Graphic Designer</p>
+                                    </div>
+                                </div>
+                            </td>
+                            <td class="card user-information__td user-information__td--activity">
+                                <div class="user-information__activity"><img class="user-information__time" src="images/small-img/offline.png" alt="Time">
+                                    <p class="user-information__activity-text">2 days ago</p>
+                                </div>
+                            </td>
+                            <td class="card user-information__td user-information__td--mail"><a class="user-information__mail" href="mailto:janedoe@design.com">janedoe@design.com</a></td>
+                            <td class="card user-information__td user-information__td--phone"><a class="user-information__phone" href="tel:(000)111222333">(000) 111 222 333</a></td>
+                            <td class="card user-information__td user-information__td--options"><button class="button user-information__button" type="button"><img class="user-information__img-options" src="images/small-img/options.png" alt="Options"></button></td>
+                        </tr>
+                    </table>
+                    <div class="pagination">
+                        <ul class="pagination__list">
+                            <li class="pagination__item"><a class="pagination__link pagination__link--active" href="#5">1</a></li>
+                            <li class="pagination__item"><a class="pagination__link" href="#5">2</a></li>
+                            <li class="pagination__item"><a class="pagination__link" href="#5">3</a></li>
+                            <li class="pagination__item"><a class="pagination__link" href="#5">4</a></li>
+                            <li class="pagination__item"><a class="pagination__link" href="#5">5</a></li>
+                            <li class="pagination__item-next"><a class="pagination__link-next" href="#5"><svg class="pagination__link-next">
+                                        <use xlink:href="images/svg-sprite/svg-sprite.svg#arrow-next"></use>
+                                    </svg></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="scripts/common.js"></script>
+</body>
+
+</html>

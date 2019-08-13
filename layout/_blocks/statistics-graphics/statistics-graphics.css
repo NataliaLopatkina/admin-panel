@@ -1,0 +1,28 @@
+@import "../statistics-graphic-quality/statistics-graphic-quality.css";
+@import "../graphic-active-users/graphic-active-users.css";
+
+.statistics-graphics {
+    display: flex;
+    justify-content: space-between;
+
+    &__quality {
+        width: 577px;
+        box-sizing: border-box;
+    }
+
+    &__active-users {
+        position: relative;
+    }
+
+    &__img-edit {
+        position: absolute;
+        top: 45px;
+        left: calc(100% - 142px);
+    }
+
+    &__img-delete {
+        position: absolute;
+        top: 43px;
+        left: calc(100% - 67px);
+    }
+}

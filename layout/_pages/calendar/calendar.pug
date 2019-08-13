@@ -1,0 +1,15 @@
+extends ../../_blocks/template/template.pug
+
+block data
+    -
+        var data = {
+            navPanel: {
+                activeItem: "Calendar",
+            },
+
+            calendar: true,
+        }
+
+block content
+    div(class="box content")
+        include ../../_blocks/calendar/calendar.pug

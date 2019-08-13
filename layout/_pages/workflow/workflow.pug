@@ -1,0 +1,146 @@
+extends ../../_blocks/template/template.pug
+
+block data
+    -
+        var data = {
+            navPanel: {
+                activeItem: "Workflow",
+            },
+        }
+
+block content
+    div(class="box content content--workflow")
+        div(class="work-list")
+            div(class="work-item")
+                div(class="work-item__header")
+                    p(class="work-item__title") To Do 
+                        span(class="work-item__quality") (6)
+                    img(class="work-item__header-arrow" src="images/small-img/arrow-workflow.png" alt="Arrow")
+
+                include ../../_blocks/tasks-item/tasks-item.pug
+                -
+                    var tasks = [
+                        {
+                            text: "N",
+                            title: "New website for JCD.pl",
+                            img: "time",
+                            time: "5 days left",
+                        },
+
+                        {
+                            text: "F",
+                            title: "Free PSD Template vol. 3",
+                            img: "time",
+                            time: "5 days left",
+                        },
+
+                        {
+                            text: "N",
+                            title: "New logo for Google",
+                            img: "time",
+                            time: "5 days left",
+                        },
+
+                        {
+                            text: "N",
+                            title: "New website for Windu.org",
+                            img: "time",
+                            time: "5 days left",
+                        },
+
+                        {
+                            text: "F",
+                            title: "Free PSD Template vol. 2",
+                            img: "time",
+                            time: "5 days left",
+                        },
+
+                        {
+                            text: "I",
+                            title: "Iconset Vol. 3",
+                            img: "time",
+                            time: "5 days left",
+                        },
+                    ]
+
+                each item in tasks
+                    +tasks-item(item)(class="tasks-item--workflow card")
+
+            div(class="work-item")
+                div(class="work-item__header")
+                    p(class="work-item__title") In Progress 
+                        span(class="work-item__quality") (3)
+                    img(class="work-item__header-arrow" src="images/small-img/arrow-workflow.png" alt="Arrow")
+
+                include ../../_blocks/tasks-item/tasks-item.pug
+                -
+                    var tasks = [
+                        {
+                            text: "N",
+                            title: "New logo for Apple",
+                            img: "time",
+                            time: "1 days left",
+                        },
+
+                        {
+                            text: "D",
+                            title: "Daily UI Kit",
+                            img: "time",
+                            time: "5 days left",
+                        },
+
+                        {
+                            text: "B",
+                            title: "Business Cards",
+                            img: "time-delay",
+                            time: "2 days delays",
+                            typeTime: "delay",
+                        },
+                    ]
+
+                each item in tasks
+                    +tasks-item(item)(class="tasks-item--workflow card")
+
+            div(class="work-item")
+                div(class="work-item__header")
+                    p(class="work-item__title") Completed 
+                        span(class="work-item__quality") (4)
+
+                include ../../_blocks/tasks-item/tasks-item.pug
+                -
+                    var tasks = [
+                        {
+                            text: "F",
+                            title: "Free PSD Template vol. 1",
+                            img: "time-complete",
+                            time: "completed!",
+                            typeTime: "completed",
+                        },
+
+                        {
+                            text: "I",
+                            title: "Iconset vol. 1",
+                            img: "time-complete",
+                            time: "completed!",
+                            typeTime: "completed",
+                        },
+
+                        {
+                            text: "N",
+                            title: "New website for Symu.co",
+                            img: "time-complete",
+                            time: "completed!",
+                            typeTime: "completed",
+                        },
+
+                        {
+                            text: "I",
+                            title: "Iconset vol. 2",
+                            img: "time-complete",
+                            time: "completed!",
+                            typeTime: "completed",
+                        },
+                    ]
+
+                each item in tasks
+                    +tasks-item(item)(class="tasks-item--workflow card")

@@ -1,0 +1,8 @@
+@import "../graphic-sales/graphic-sales.css";
+@import "../graphic-report/graphic-report.css";
+
+.graphics {
+    display: flex;
+    margin-bottom: 40px;
+    width: 100%;
+}

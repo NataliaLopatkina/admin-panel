@@ -1,0 +1,23 @@
+.badge {
+    font-size: 24px;
+    font-weight: 500;
+    color: #ffffff;
+    display: block;
+    width: 45px;
+    height: 45px;
+    background-color: #5384ff;
+    border-radius: 50%;
+    text-align: center;
+    padding-top: 8px;
+    box-sizing: border-box;
+
+    &--delay {
+        background-color: #f83c7b;
+    }
+
+    &--profile {
+        text-transform: uppercase;
+        width: 47px;
+        height: 47px;
+    }
+}

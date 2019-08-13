@@ -1,0 +1,26 @@
+extends ../../_blocks/template/template.pug
+
+block data
+    -
+        var data = {
+            navPanel: {
+                activeItem: "Home",
+            },
+        }
+
+block content
+    div(class="box content")
+        h1(class="content__title") Hello John!
+        div(class="graphics")
+            div(id="graphic-sales" class="card graphic-sales")
+            div(id="graphic-report" class="card graphic-report")
+        div(class="information")
+            ul(class="information__list")
+                li(class="information__item")
+                    include ../../_blocks/tasks/tasks.pug
+
+                li(class="information__item")
+                    include ../../_blocks/messages/messages.pug
+
+                li(class="information__item")
+                    include ../../_blocks/activity/activity.pug

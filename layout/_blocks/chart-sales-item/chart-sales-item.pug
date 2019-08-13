@@ -1,0 +1,17 @@
+mixin chart-sales-item(item)
+
+    - var id = ""
+    if item.id
+        - id = "chart-sales-" + item.id
+
+    - var percentColor = ""
+    if item.percentColor
+        - percentColor = " chart-sales-item__percent--" + item.percentColor
+
+    div(class="chart-sales-item")
+        div(class="chart-sales-item__circle")
+            canvas(class="chart-sales-item__canvas" width="189" height="189" id=id)
+            p(class="chart-sales-item__percent" + percentColor) !{item.percent}
+        p(class="chart-sales-item__text-block")
+            span(class="chart-sales-item__amount") !{item.amount}
+            span(class="chart-sales-item__title") !{item.title}

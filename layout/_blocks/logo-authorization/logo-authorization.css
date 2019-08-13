@@ -1,0 +1,10 @@
+.logo-authorization {
+    &__img {
+        width: 233px;
+        height: 65px;
+
+        @media (--XS) {
+            width: 200px;
+        }
+    }
+}

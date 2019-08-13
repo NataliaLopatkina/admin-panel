@@ -1,0 +1,47 @@
+@import "../chart-sales-item/chart-sales-item.css";
+
+.chart-sales {
+    padding: 30px 34px 109px 35px;
+
+    &__header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 82px;
+    }
+
+    &__title {
+        font-size: 36px;
+        font-weight: 700;
+        color: #8492af;
+        padding-top: 11px;
+    }
+
+    .chart-sales__button {
+        border: 1px solid rgba(132, 146, 175, 0.3);
+        background-color: #ffffff;
+        margin-right: 20px;
+
+        &:last-child {
+            margin-right: 0;
+        }
+
+        &--edit {
+            padding: 14px 13px 9px;
+        }
+
+        &--delete {
+            padding: 12px 15px 10px 16px;
+        }
+    }
+
+    &__content {
+        padding-left: 77px;
+        padding-right: 61px;
+    }
+
+    &__list {
+        display: flex;
+        justify-content: space-between;
+    }
+}

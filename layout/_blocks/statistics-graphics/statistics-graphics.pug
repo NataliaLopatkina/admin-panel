@@ -1,0 +1,24 @@
+div(class="statistics-graphics statistics__illustration")
+    div(class="card statistics-graphics__quality")
+        include ../../_blocks/statistics-graphic-quality/statistics-graphic-quality.pug
+        -
+            var statisticsQuality = [
+                {
+                    value: "1,560",
+                    title: "Sales",
+                    img: "sales",
+                },
+
+                {
+                    value: "3,230",
+                    title: "Views",
+                    img: "views",
+                },
+            ]
+
+        each item in statisticsQuality
+            +statistics-graphic-quality(item)
+    div(class="statistics-graphics__active-users")
+        div(class="card graphic-active-users" id="graphic-active-users")
+        img(class="statistics-graphics__img-edit" src="images/small-img/edit.jpg" alt="Edit")
+        img(class="statistics-graphics__img-delete" src="images/small-img/delete.jpg" alt="Delete")

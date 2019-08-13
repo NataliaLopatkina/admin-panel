@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1.0, width=device-width">
+    <title>Admin panel</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&amp;amp;subset=cyrillic" rel="stylesheet">
+    <link rel="stylesheet" href="stylesheets/common.css">
+</head>
+
+<body>
+    <header class="header-authorization box-authorization">
+        <div class="header-authorization__content">
+            <div class="header-authorization__actions">
+                <div class="logo-authorization"><a class="logo-authorization__link" href="#5"><svg class="logo-authorization__img">
+                            <use xlink:href="images/svg-sprite/svg-sprite.svg#logo"></use>
+                        </svg></a></div><button class="button-menu button-menu--opened" type="button"><span class="button-menu__img"></span></button>
+            </div>
+            <nav class="nav-authorization">
+                <ul class="nav-authorization__list">
+                    <li class="nav-authorization__item"><a class="nav-authorization__link" href="#5">Register</a></li>
+                    <li class="nav-authorization__item nav-authorization__item--active"><a class="nav-authorization__link" href="#5">Login</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main class="main-authorization box-authorization">
+        <div class="authorization">
+            <h1 class="authorization__title">Welcome <span class="authorization__title-color">back!</span></h1>
+            <form class="authorization__form" action="#5" method="post">
+                <div class="authorization__field authorization__field--name"><input class="authorization__field-text" type="text" placeholder="Username"></div>
+                <div class="authorization__field authorization__field--password"><input class="authorization__field-text" type="password" placeholder="Password"></div><a class="button button--text button--background button--ellipse authorization__button" href="#5">Enter<img class="authorization__button-img" src="images/small-img/arrow.png" alt="Arrow"></a>
+            </form>
+        </div>
+    </main>
+    <script src="scripts/common.js"></script>
+</body>
+
+</html>

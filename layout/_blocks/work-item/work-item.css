@@ -1,0 +1,26 @@
+.work-item {
+    width: calc(100% / 3);
+    margin-right: 60px;
+    box-sizing: border-box;
+
+    &:last-child {
+        margin-right: 0;
+    }
+
+    &__header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 34px;
+    }
+
+    &__title {
+        font-size: 36px;
+        font-weight: 500;
+        color: #0e1a35;
+    }
+
+    &__quality {
+        color: #8492af;
+    }
+}

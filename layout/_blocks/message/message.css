@@ -1,0 +1,59 @@
+.message {
+    display: flex;
+    border-top: 1px solid rgba(132, 146, 175, 0.3);
+    padding: 26px 50px 15px 35px;
+
+    &--unread {
+        background-color: rgba(218, 222, 231, 0.3);
+    }
+
+    &__profile {
+        width: 47px;
+        height: 47px;
+        border-radius: 50%;
+        overflow: hidden;
+        padding-top: 3px;
+        margin-right: 23px;
+    }
+
+    &__header {
+        display: flex;
+        align-items: center;
+        margin-bottom: 6px;
+    }
+
+    &__name-user {
+        font-size: 14px;
+        font-weight: 500;
+        color: #0e1a35;
+        letter-spacing: 0.2px;
+        margin-right: 7px;
+    }
+
+    &__time {
+        font-size: 14px;
+        font-weight: 400;
+        letter-spacing: 0.2px;
+        color: #8492af;
+    }
+
+    &__text {
+        font-size: 14px;
+        font-weight: 400;
+        letter-spacing: 0.2px;
+        color: #555555;
+        margin-bottom: 9px;
+    }
+
+    &__actions {
+        padding-left: 3px;
+    }
+
+    &__button {
+        margin-right: 13px;
+
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+}

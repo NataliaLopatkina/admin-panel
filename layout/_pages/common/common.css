@@ -1,0 +1,16 @@
+@import "../../_blocks/normalize/normalize.css";
+@import "../../_blocks/reset/reset.css";
+
+/*! Styles */
+
+@import "../../_blocks/global/global.css";
+@import "../../_blocks/box/box.css";
+@import "../../_blocks//content/content.css";
+
+/* Page authorization/registration */
+@import "../../_blocks/box-authorization/box-authorization.css";
+@import "../../_blocks/header-authorization/header-authorization.css";
+@import "../../_blocks/authorization/authorization.css";
+@import "../../_blocks/header/header.css";
+@import "../../_blocks/nav-panel/nav-panel.css";
+@import "../../_blocks/information/information.css";

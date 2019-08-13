@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1.0, width=device-width">
+    <title>Admin panel</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&amp;amp;subset=cyrillic" rel="stylesheet">
+    <script src="https://www.gstatic.com/charts/loader.js"></script>
+    <link rel="stylesheet" href="stylesheets/common.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="header__content">
+            <div class="logo"><a class="logo__link" href="home.html"><svg class="logo__img">
+                        <use xlink:href="images/svg-sprite/svg-sprite.svg#logo"></use>
+                    </svg></a></div>
+            <div class="header__nav">
+                <nav class="nav-site">
+                    <ul class="nav-site__list">
+                        <li class="nav-site__item nav-site__item--menu"><button class="button nav-site__button-arrow" type="button"><svg class="nav-site__arrow-img">
+                                    <use xlink:href="images/svg-sprite/svg-sprite.svg#header-arrow"></use>
+                                </svg></button><button class="button nav-site__button-menu" type="button"><img class="nav-site__button-img" src="images/small-img/burger.svg" alt="Menu"></button></li>
+                        <li class="nav-site__item nav-site__item--search">
+                            <form class="nav-site__form"><button class="button nav-site__button-search" type="button"><img class="nav-site__button-img" src="images/small-img/search.svg" alt="Search"></button><input class="nav-site__field-search" type="text"></form>
+                        </li>
+                    </ul>
+                    <div class="nav-site__menu">
+                        <ul class="nav-site__menu-list">
+                            <li class="nav-site__menu-item"><a class="nav-site__menu-link" href="#5">Home</a></li>
+                            <li class="nav-site__menu-item"><a class="nav-site__menu-link" href="#5">Home</a></li>
+                            <li class="nav-site__menu-item"><a class="nav-site__menu-link" href="#5">Home</a></li>
+                        </ul>
+                    </div>
+                </nav>
+                <nav class="nav-user">
+                    <ul class="nav-user__list">
+                        <li class="nav-user__item nav-user__item--add-project"><button class="button button--text button--background button--ellipse button--size-less nav-user__button" type="button">Add project<img class="nav-user__button-img" src="images/small-img/plus.png" alt="Add"></button></li>
+                        <li class="nav-user__item nav-user__item--messages"><a class="nav-user__messages-link" href="#5"><img class="nav-user__messages-img" src="images/small-img/messages.svg" alt="Messages"></a></li>
+                        <li class="nav-user__item nav-user__item--notifications"><span class="nav-user__quality">3</span><button class="button nav-user__notifications-button"><img class="nav-user__notifications-img" src="images/small-img/notifications.svg" alt="Notifications"></button></li>
+                        <li class="nav-user__item nav-user__item--profile"><a class="nav-user__profile-link" href="#5"><img class="nav-user__profile-photo" src="images/user/profile.jpg" alt="User"></a><button class="nav-user__button-arrow" type="button"><svg class="nav-user__arrow-img">
+                                    <use xlink:href="images/svg-sprite/svg-sprite.svg#profile-arrow"></use>
+                                </svg></button></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <main class="main">
+        <nav class="nav-panel">
+            <ul class="nav-panel__list">
+                <li class="nav-panel__item"><img class="nav-panel__icon" src="images/small-img/home.svg" alt="Icon nav panel"><a class="nav-panel__link" href="home.html">Home</a></li>
+                <li class="nav-panel__item nav-panel__item--active"><img class="nav-panel__icon" src="images/small-img/workflow.svg" alt="Icon nav panel"><a class="nav-panel__link" href="workflow.html">Workflow</a></li>
+                <li class="nav-panel__item"><img class="nav-panel__icon" src="images/small-img/statistics.svg" alt="Icon nav panel"><a class="nav-panel__link" href="statistics.html">Statistics</a></li>
+                <li class="nav-panel__item"><img class="nav-panel__icon" src="images/small-img/calendar.svg" alt="Icon nav panel"><a class="nav-panel__link" href="calendar.html">Calendar</a></li>
+                <li class="nav-panel__item"><img class="nav-panel__icon" src="images/small-img/users.svg" alt="Icon nav panel"><a class="nav-panel__link" href="users.html">Users</a></li>
+                <li class="nav-panel__item"><img class="nav-panel__icon" src="images/small-img/settings.svg" alt="Icon nav panel"><a class="nav-panel__link" href="#5.html">Settings</a></li>
+            </ul>
+        </nav>
+        <div class="box content content--workflow">
+            <div class="work-list">
+                <div class="work-item">
+                    <div class="work-item__header">
+                        <p class="work-item__title">To Do <span class="work-item__quality">(6)</span></p><img class="work-item__header-arrow" src="images/small-img/arrow-workflow.png" alt="Arrow">
+                    </div>
+                    <div class="tasks-item tasks-item--workflow card">
+                        <div class="badge badge--profile tasks-item__profile"><span class="tasks-tem__text">N</span></div>
+                        <div class="tasks-item__description">
+                            <h4 class="tasks-item__title">New website for JCD.pl</h4>
+                            <p class="tasks-item__block-time"><img class="tasks-item__img-time" src="images/small-img/time.png" alt="Time"><time class="tasks-item__time" datetime="2010-10-10">5 days left</time></p>
+                        </div>
+                        <div class="tasks-item__actions"><button class="button tasks-item__button" type="button"><img class="task-item__img-options" src="images/small-img/options.png" alt="Options"></button></div>
+                    </div>
+                    <div class="tasks-item tasks-item--workflow card">
+                        <div class="badge badge--profile tasks-item__profile"><span class="tasks-tem__text">F</span></div>
+                        <div class="tasks-item__description">
+                            <h4 class="tasks-item__title">Free PSD Template vol. 3</h4>
+                            <p class="tasks-item__block-time"><img class="tasks-item__img-time" src="images/small-img/time.png" alt="Time"><time class="tasks-item__time" datetime="2010-10-10">5 days left</time></p>
+                        </div>
+                        <div class="tasks-item__actions"><button class="button tasks-item__button" type="button"><img class="task-item__img-options" src="images/small-img/options.png" alt="Options"></button></div>
+                    </div>
+                    <div class="tasks-item tasks-item--workflow card">
+                        <div class="badge badge--profile tasks-item__profile"><span class="tasks-tem__text">N</span></div>
+                        <div class="tasks-item__description">
+                            <h4 class="tasks-item__title">New logo for Google</h4>
+                            <p class="tasks-item__block-time"><img class="tasks-item__img-time" src="images/small-img/time.png" alt="Time"><time class="tasks-item__time" datetime="2010-10-10">5 days left</time></p>
+                        </div>
+                        <div class="tasks-item__actions"><button class="button tasks-item__button" type="button"><img class="task-item__img-options" src="images/small-img/options.png" alt="Options"></button></div>
+                    </div>
+                    <div class="tasks-item tasks-item--workflow card">
+                        <div class="badge badge--profile tasks-item__profile"><span class="tasks-tem__text">N</span></div>
+                        <div class="tasks-item__description">
+                            <h4 class="tasks-item__title">New website for Windu.org</h4>
+                            <p class="tasks-item__block-time"><img class="tasks-item__img-time" src="images/small-img/time.png" alt="Time"><time class="tasks-item__time" datetime="2010-10-10">5 days left</time></p>
+                        </div>
+                        <div class="tasks-item__actions"><button class="button tasks-item__button" type="button"><img class="task-item__img-options" src="images/small-img/options.png" alt="Options"></button></div>
+                    </div>
+                    <div class="tasks-item tasks-item--workflow card">
+                        <div class="badge badge--profile tasks-item__profile"><span class="tasks-tem__text">F</span></div>
+                        <div class="tasks-item__description">
+                            <h4 class="tasks-item__title">Free PSD Template vol. 2</h4>
+                            <p class="tasks-item__block-time"><img class="tasks-item__img-time" src="images/small-img/time.png" alt="Time"><time class="tasks-item__time" datetime="2010-10-10">5 days left</time></p>
+                        </div>
+                        <div class="tasks-item__actions"><button class="button tasks-item__button" type="button"><img class="task-item__img-options" src="images/small-img/options.png" alt="Options"></button></div>
+                    </div>
+                    <div class="tasks-item tasks-item--workflow card">
+                        <div class="badge badge--profile tasks-item__profile"><span class="tasks-tem__text">I</span></div>
+                        <div class="tasks-item__description">
+                            <h4 class="tasks-item__title">Iconset Vol. 3</h4>
+                            <p class="tasks-item__block-time"><img class="tasks-item__img-time" src="images/small-img/time.png" alt="Time"><time class="tasks-item__time" datetime="2010-10-10">5 days left</time></p>
+                        </div>
+                        <div class="tasks-item__actions"><button class="button tasks-item__button" type="button"><img class="task-item__img-options" src="images/small-img/options.png" alt="Options"></button></div>
+                    </div>
+                </div>
+                <div class="work-item">
+                    <div class="work-item__header">
+                        <p class="work-item__title">In Progress <span class="work-item__quality">(3)</span></p><img class="work-item__header-arrow" src="images/small-img/arrow-workflow.png" alt="Arrow">
+                    </div>
+                    <div class="tasks-item tasks-item--workflow card">
+                        <div class="badge badge--profile tasks-item__profile"><span class="tasks-tem__text">N</span></div>
+                        <div class="tasks-item__description">
+                            <h4 class="tasks-item__title">New logo for Apple</h4>
+                            <p class="tasks-item__block-time"><img class="tasks-item__img-time" src="images/small-img/time.png" alt="Time"><time class="tasks-item__time" datetime="2010-10-10">1 days left</time></p>
+                        </div>
+                        <div class="tasks-item__actions"><button class="button tasks-item__button" type="button"><img class="task-item__img-options" src="images/small-img/options.png" alt="Options"></button></div>
+                    </div>
+                    <div class="tasks-item tasks-item--workflow card">
+                        <div class="badge badge--profile tasks-item__profile"><span class="tasks-tem__text">D</span></div>
+                        <div class="tasks-item__description">
+                            <h4 class="tasks-item__title">Daily UI Kit</h4>
+                            <p class="tasks-item__block-time"><img class="tasks-item__img-time" src="images/small-img/time.png" alt="Time"><time class="tasks-item__time" datetime="2010-10-10">5 days left</time></p>
+                        </div>
+                        <div class="tasks-item__actions"><button class="button tasks-item__button" type="button"><img class="task-item__img-options" src="images/small-img/options.png" alt="Options"></button></div>
+                    </div>
+                    <div class="tasks-item tasks-item--workflow card">
+                        <div class="badge badge--profile tasks-item__profile"><span class="tasks-tem__text">B</span></div>
+                        <div class="tasks-item__description">
+                            <h4 class="tasks-item__title">Business Cards</h4>
+                            <p class="tasks-item__block-time"><img class="tasks-item__img-time" src="images/small-img/time-delay.png" alt="Time"><time class="tasks-item__time tasks-item__time--delay" datetime="2010-10-10">2 days delays</time></p>
+                        </div>
+                        <div class="tasks-item__actions"><button class="button tasks-item__button" type="button"><img class="task-item__img-options" src="images/small-img/options.png" alt="Options"></button></div>
+                    </div>
+                </div>
+                <div class="work-item">
+                    <div class="work-item__header">
+                        <p class="work-item__title">Completed <span class="work-item__quality">(4)</span></p>
+                    </div>
+                    <div class="tasks-item tasks-item--workflow card">
+                        <div class="badge badge--profile tasks-item__profile"><span class="tasks-tem__text">F</span></div>
+                        <div class="tasks-item__description">
+                            <h4 class="tasks-item__title">Free PSD Template vol. 1</h4>
+                            <p class="tasks-item__block-time"><img class="tasks-item__img-time" src="images/small-img/time-complete.png" alt="Time"><time class="tasks-item__time tasks-item__time--completed" datetime="2010-10-10">completed!</time></p>
+                        </div>
+                        <div class="tasks-item__actions"><button class="button tasks-item__button" type="button"><img class="task-item__img-options" src="images/small-img/options.png" alt="Options"></button></div>
+                    </div>
+                    <div class="tasks-item tasks-item--workflow card">
+                        <div class="badge badge--profile tasks-item__profile"><span class="tasks-tem__text">I</span></div>
+                        <div class="tasks-item__description">
+                            <h4 class="tasks-item__title">Iconset vol. 1</h4>
+                            <p class="tasks-item__block-time"><img class="tasks-item__img-time" src="images/small-img/time-complete.png" alt="Time"><time class="tasks-item__time tasks-item__time--completed" datetime="2010-10-10">completed!</time></p>
+                        </div>
+                        <div class="tasks-item__actions"><button class="button tasks-item__button" type="button"><img class="task-item__img-options" src="images/small-img/options.png" alt="Options"></button></div>
+                    </div>
+                    <div class="tasks-item tasks-item--workflow card">
+                        <div class="badge badge--profile tasks-item__profile"><span class="tasks-tem__text">N</span></div>
+                        <div class="tasks-item__description">
+                            <h4 class="tasks-item__title">New website for Symu.co</h4>
+                            <p class="tasks-item__block-time"><img class="tasks-item__img-time" src="images/small-img/time-complete.png" alt="Time"><time class="tasks-item__time tasks-item__time--completed" datetime="2010-10-10">completed!</time></p>
+                        </div>
+                        <div class="tasks-item__actions"><button class="button tasks-item__button" type="button"><img class="task-item__img-options" src="images/small-img/options.png" alt="Options"></button></div>
+                    </div>
+                    <div class="tasks-item tasks-item--workflow card">
+                        <div class="badge badge--profile tasks-item__profile"><span class="tasks-tem__text">I</span></div>
+                        <div class="tasks-item__description">
+                            <h4 class="tasks-item__title">Iconset vol. 2</h4>
+                            <p class="tasks-item__block-time"><img class="tasks-item__img-time" src="images/small-img/time-complete.png" alt="Time"><time class="tasks-item__time tasks-item__time--completed" datetime="2010-10-10">completed!</time></p>
+                        </div>
+                        <div class="tasks-item__actions"><button class="button tasks-item__button" type="button"><img class="task-item__img-options" src="images/small-img/options.png" alt="Options"></button></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="scripts/common.js"></script>
+</body>
+
+</html>

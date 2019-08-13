@@ -1,0 +1,26 @@
+@import "../user-information/user-information.css";
+
+.users-table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: left;
+
+    &__th {
+        font-size: 20px;
+        font-weight: 400;
+        color: #8492af;
+        padding: 18px 30px 19px 36px;
+
+        &--activity {
+            padding-left: 44px;
+        }
+
+        &--mail {
+            padding-left: 42px;
+        }
+
+        &--phone {
+            padding-left: 41px;
+        }
+    }
+}

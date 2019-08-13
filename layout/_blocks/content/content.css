@@ -1,0 +1,69 @@
+@import "../graphics/graphics.css";
+@import "../information/information.css";
+@import "../work-list/work-list.css";
+@import "../statistics/statistics.css";
+@import "../calendar/calendar.css";
+@import "../users/users.css";
+
+.content {
+    padding: 172px 53px 61px 40px;
+    background: #f6f7f6;
+    margin-left: 318px;
+    box-sizing: border-box;
+
+    &--workflow {
+        padding: 141px 62px 318px 42px;
+    }
+
+    &--statistics {
+        padding: 177px 54px 120px 43px;
+    }
+
+    &--users {
+        padding: 177px 53px 103px 42px;
+    }
+
+    &__header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__header-container-select {
+        position: relative;
+        margin-right: 30px;
+
+        &:last-child {
+            margin-right: 0;
+        }
+
+        &:after {
+            position: absolute;
+            content: url("../images/small-img/arrow-select.png");
+            right: 20px;
+            top: 50%;
+            margin-top: -9px;
+        }
+    }
+
+    &__header-select {
+        font-size: 14px;
+        color: #8492af;
+        background: transparent;
+        border: 1px solid rgba(132, 146, 175, 0.3);
+        border-radius: 24px;
+        padding: 16px 62px 14px 22px;
+        box-sizing: border-box;
+        outline: none;
+        cursor: pointer;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+    }
+    
+    &__title {
+        font-size: 48px;
+        color: #0e1a35;
+        margin-bottom: 31px;
+    }
+}

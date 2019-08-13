@@ -1,0 +1,20 @@
+mixin message(item)
+
+    -var messageUnread = ""
+    if item.unread
+        - messageUnread = " message--" + item.unread
+
+    div(class="message" + messageUnread)
+        div(class="message__profile")
+            img(class="message__profile-photo" src="images/user/" + item.photo + ".jpg" alt="User")
+        div(class="message__text-block")
+            div(class="message__header")
+                p(class="message__name-user") !{item.name}
+                time(class="message__time" datetime="2010-10-10") !{item.time} 
+            div(class="message__body")
+                p(class="message__text") !{item.text}
+            div(class="message__actions")
+                button(class="button message__button message__button--share" type="button")
+                    img(class="message__img-options" src="images/small-img/share.png" alt="Share")
+                button(class="button message__button message__button--share" type="button")
+                    img(class="message__img-settings" src="images/small-img/settings.png" alt="Settings")

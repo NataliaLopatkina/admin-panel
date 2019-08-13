@@ -1,0 +1,41 @@
+section(class="messages card")
+    header(class="information__item-header messages__header")
+        h3(class="information__item-title messages__title") Messages
+        span(class="badge") 2
+    div(class="tasks__list")
+        include ../../_blocks/message/message.pug
+        -
+            var messages = [
+                {
+                    unread: "unread",
+                    photo: "photo-1",
+                    name: "Nina Jones",
+                    time: "5 minutes ago",
+                    text: "Hey You! It’s me again :-) I attached new (...)",
+                },
+
+                {
+                    unread: "unread",
+                    photo: "photo-1",
+                    name: "Nina Jones",
+                    time: "About 20 hours ago",
+                    text: "Hey! I attached some new PSD files for (...)",
+                },
+
+                {
+                    photo: "photo-2",
+                    name: "James Smith",
+                    time: "2 days ago",
+                    text: "Good morning, you are fired!",
+                },
+
+                {
+                    photo: "photo-1",
+                    name: "Nina Jones",
+                    time: "About 2 weeks ago",
+                    text: "Hello! Could You bring me coffee please?",
+                },
+            ]
+
+        each item in messages
+            +message(item)

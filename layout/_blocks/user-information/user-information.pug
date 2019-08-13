@@ -1,0 +1,24 @@
+mixin user-information(item)
+    - var online = ""
+    if item.online
+        - online = " user-information__activity-text--" + item.online
+
+    tr(class="user-information")
+        td(class="card user-information__td user-information__td--avatar")
+            div(class="user-information__content-td")
+                div(class="user-information__avatar")
+                    img(class="user-information__photo" src="images/user/" + item.photo + ".jpg" alt="User")
+                div(class="user-information__block-name")
+                    p(class="user-information__name") !{item.name}
+                    p(class="user-information__profession") !{item.profession}
+        td(class="card user-information__td user-information__td--activity")
+            div(class="user-information__activity")
+                img(class="user-information__time" src="images/small-img/" + item.img + ".png" alt="Time")
+                p(class="user-information__activity-text" + online) !{item.text}
+        td(class="card user-information__td user-information__td--mail")
+            a(class="user-information__mail" href="mailto:" + item.mail) !{item.mail}
+        td(class="card user-information__td user-information__td--phone")
+            a(class="user-information__phone" href="tel:" + item.phoneLink) !{item.phone}
+        td(class="card user-information__td user-information__td--options")
+            button(class="button user-information__button" type="button")
+                img(class="user-information__img-options" src="images/small-img/options.png" alt="Options")

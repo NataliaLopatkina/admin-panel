@@ -1,0 +1,35 @@
+.calendar {
+    &__header {
+        margin-bottom: 32px;
+    }
+
+    &__title-content {
+        display: flex;
+        align-items: center;
+    }
+
+    &__title {
+        font-size: 36px;
+        color: #0e1a35;
+    }
+
+    &__button {
+        border: none;
+        background: none;
+        padding: 0;
+        outline: none;
+
+        &--left {
+            margin-right: 26px;
+        }
+
+        &--right {
+            margin-left: 26px;
+        }
+    }
+
+    &__button-icon {
+        width: 6px;
+        height: 12px;
+    }
+}

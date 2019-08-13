@@ -1,0 +1,87 @@
+.user-information {
+
+    &__td {
+        font-size: 20px;
+        padding: 25px 25px 25px 34px;
+        box-sizing: border-box;
+
+        &--avatar {
+            width: 423px;
+        }
+
+        &--activity {
+            width: 309px;
+            padding-left: 44px;
+        }
+
+        &--mail {
+            width: 311px;
+            padding-left: 44px;
+        }
+
+        &--phone {
+            width: 309px;
+            padding-left: 41px;
+        }
+
+        &--options {
+            padding: 26px 25px;
+        }
+    }
+
+    &__content-td {
+        display: flex;
+        align-items: center;
+    }
+
+    &__avatar {
+        width: 70px;
+        height: 70px;
+        border-radius: 50%;
+        overflow: hidden;
+        margin-right: 35px;
+    }
+
+    &__name {
+        font-weight: 500;
+        color: #0e1a35;
+        margin-bottom: 3px;
+    }
+
+    &__profession {
+        color: #8492af;
+    }
+
+    &__activity {
+        display: flex;
+        align-items: center;
+    }
+
+    &__time {
+        margin-right: 10px;
+    }
+
+    &__activity-text {
+        font-weight: 500;
+        color: #8492af;
+
+        &--online {
+            color: #00bf1b;
+        }
+    }
+
+    &__mail {
+        font-weight: 500;
+        color: #0e1a35;
+    }
+
+    &__phone {
+        font-weight: 500;
+        color: #0e1a35;
+    }
+
+    &__button {
+        display: block;
+        margin: 0 auto;
+    }
+}

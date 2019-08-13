@@ -1,0 +1,13 @@
+mixin activity-item(item)
+
+    div(class="activity-item")
+        div(class="activity-item__profile")
+            img(class="activity-item__profile-photo" src="images/user/" + item.photo + ".jpg" alt="User")
+        div(class="activity-item__text-block")    
+            div(class="activity-item__header")
+                p(class="activity-item__name-user") !{item.name}
+                p(class="activity-item__text") !{item.text}
+                p(class="activity-item__title") !{item.title}
+            div(class="activity-item__body")
+                img(class="activity-item__img-time" src="images/small-img/time.png" alt="Time")
+                time(class="activity-item__time" datetime="2010-10-10") !{item.time}

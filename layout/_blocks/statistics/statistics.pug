@@ -1,0 +1,19 @@
+div(class="statistics")
+    div(class="statistics__header content__header")
+        h1(class="statistics__title") Lorem Ipsum Stats
+        div(class="statistics__select-list")
+            form(class="statistics__form" action="#5" method="post")
+                div(class="content__header-container-select statistics__containter")
+                    select(class="content__header-select statistics__select")
+                        option(class="statistics__option") Period: Last Month
+                        option(class="statistics__option") Period: Last Month
+                        option(class="statistics__option") Period: Last Month
+                div(class="content__header-container-select statistics__containter")
+                    select(class="content__header-select statistics__select")
+                        option(class="statistics__option") Type: Notifications
+                        option(class="statistics__option") Type: Notifications
+                        option(class="statistics__option") Type: Notifications
+
+    include ../../_blocks/statistics-graphics/statistics-graphics.pug
+
+    include ../../_blocks/chart-sales/chart-sales.pug

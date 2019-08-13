@@ -1,0 +1,17 @@
+mixin tasks-item(item)
+
+    - var typeTime = ""
+    if item.typeTime
+        - typeTime = " tasks-item__time--" + item.typeTime
+
+    div(class="tasks-item")&attributes(attributes)
+        div(class="badge badge--profile tasks-item__profile")
+            span(class="tasks-tem__text") !{item.text}
+        div(class="tasks-item__description")
+            h4(class="tasks-item__title") !{item.title}
+            p(class="tasks-item__block-time")
+                img(class="tasks-item__img-time" src="images/small-img/" + item.img + ".png" alt="Time")
+                time(class="tasks-item__time" + typeTime datetime="2010-10-10") !{item.time}
+        div(class="tasks-item__actions")
+            button(class="button tasks-item__button" type="button")
+                img(class="task-item__img-options" src="images/small-img/options.png" alt="Options") 

@@ -1,0 +1,27 @@
+block data
+
+doctype html
+html(lang="en")
+    head
+        meta(charset="utf-8")
+        meta(name="viewport", content="initial-scale=1.0, width=device-width")
+        title Admin panel
+        link(href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&amp;subset=cyrillic" rel="stylesheet")
+        script(src="https://www.gstatic.com/charts/loader.js")
+        link(rel="stylesheet" href="stylesheets/common.css")
+
+        if data.calendar
+        
+            script(src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js")
+            link(href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/themes/base/jquery-ui.css" rel="stylesheet" type="text/css")
+            script(src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/jquery-ui.min.js")
+
+    body
+        include ../../_blocks/header/header.pug
+        
+        main(class="main")
+            include ../../_blocks/nav-panel/nav-panel.pug
+            +nav-panel(data.navPanel.activeItem)
+
+            block content
+        script(src="scripts/common.js")

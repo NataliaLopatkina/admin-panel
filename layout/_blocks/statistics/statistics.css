@@ -1,0 +1,22 @@
+@import "../statistics-graphics/statistics-graphics.css";
+@import "../chart-sales/chart-sales.css";
+
+.statistics {
+    &__header {
+        margin-bottom: 33px;
+    }
+
+    &__title {
+        font-size: 36px;
+        color: #0e1a35;
+    }
+
+    &__form {
+        display: flex;
+    }
+
+    &__illustration {
+        align-items: flex-start;
+        margin-bottom: 38px;
+    }
+}

@@ -1,0 +1,19 @@
+div(class="calendar")
+    div(class="calendar__header content__header")
+        div(class="calendar__title-content")
+            button(class="calendar__button calendar__button--left" type="button")
+                svg(class="calendar__button-icon")
+                    use(xlink:href="images/svg-sprite/svg-sprite.svg#arrow-left")
+            h1(class="calendar__title") January 2016
+            button(class="calendar__button calendar__button--right" type="button")
+                svg(class="calendar__button-icon")
+                    use(xlink:href="images/svg-sprite/svg-sprite.svg#arrow-right")
+        div(class="calendar__select-content")
+            form(class="calendar__form" action="#5" method="post")
+                div(class="content__header-container-select")
+                    select(class="content__header-select calendar__select")
+                        option(class="calendar__option") View: Month
+                        option(class="calendar__option") View: Month
+                        option(class="calendar__option") View: Month
+
+    div(class="calendar__content")

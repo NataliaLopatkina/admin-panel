@@ -1,0 +1,22 @@
+.graphic-report {
+    width: 59%;
+    height: 469px;
+}
+
+.graphic-report text[text-anchor=middle] {
+    display: none;
+}
+
+.graphic-report text[text-anchor=end] {
+    font-weight: 500;
+    fill: #d8dbe2;
+}
+
+.graphic-report g[clip-path] g:nth-child(3) path {
+    stroke-width: 7px;
+    stroke: #5584ff;
+}
+
+.graphic-report g[clip-path] g:nth-child(2) rect {
+    fill: #dadee7;
+}

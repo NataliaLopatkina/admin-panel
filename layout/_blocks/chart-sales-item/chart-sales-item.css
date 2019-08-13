@@ -1,0 +1,57 @@
+.chart-sales-item {
+    display: flex;
+    align-items: center;
+
+    &__circle {
+        position: relative;
+        width: 189px;
+        height: 189px;
+        border: 18px solid #dadee7;
+        box-sizing: border-box;
+        border-radius: 50%;
+        margin-right: 53px;
+    }
+
+    &__canvas{
+        position: absolute;
+        left: -18px;
+        top: -14px;
+    }
+
+    &__percent {
+        position: absolute;
+        font-size: 44px;
+        top: 53px;
+        left: 43px;
+
+        &--blue {
+            color: #5484ff;
+        }
+
+        &--violet {
+            color: #aa5fba;
+        }
+
+        &--pink {
+            color: #f83c7b;
+        }
+    }
+
+    &__text-block {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__amount {
+        font-size: 36px;
+        font-weight: 700;
+        color: #8492af;
+        margin-bottom: 3px;
+    }
+
+    &__title {
+        font-size: 20px;
+        font-weight: 300;
+        color: #8492af;
+    }
+}

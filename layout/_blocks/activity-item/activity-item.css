@@ -1,0 +1,73 @@
+.activity-item {
+    display: flex;
+    align-items: center;
+    padding: 31px 20px 30px 32px;
+    position: relative;
+
+    &:after {
+        position: absolute;
+        content: "";
+        width: 1px;
+        height: 63px;
+        background: rgba(132, 146, 175, 0.3);
+        top: 77px;
+        left: 58px;
+    }
+
+    &:last-child {
+        &:after {
+            display: none;
+        }
+    }
+
+    &__profile {
+        width: 47px;
+        height: 47px;
+        border-radius: 50%;
+        overflow: hidden;
+        margin-right: 27px;
+    }
+
+    &__header {
+        display: flex;
+        margin-bottom: 10px;
+    }
+
+    &__name-user {
+        font-size: 14px;
+        font-weight: 500;
+        color: #0e1a35;
+        letter-spacing: 0.2px;
+        margin-right: 2px;
+    }
+
+    &__text {
+        font-size: 14px;
+        font-weight: 400;
+        color: #555555;
+        letter-spacing: 0.2px;
+        margin-right: 2px;
+    }
+
+    &__title {
+        font-size: 14px;
+        font-weight: 500;
+        letter-spacing: 0.2px;
+        color: #555555;
+    }
+
+    &__body {
+        display: flex;
+        align-items: center;
+    }
+
+    &__img-time {
+        margin-right: 5px;
+    }
+
+    &__time {
+        font-size: 14px;
+        font-weight: 400;
+        color: #8492af;
+    }
+}

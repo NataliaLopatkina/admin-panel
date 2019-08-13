@@ -1,0 +1,13 @@
+extends ../../_blocks/template/template.pug
+
+block data
+    -
+        var data = {
+            navPanel: {
+                activeItem: "Statistics",
+            },
+        }
+
+block content
+    div(class="box content content--statistics")
+        include ../../_blocks/statistics/statistics.pug

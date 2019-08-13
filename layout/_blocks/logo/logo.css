@@ -1,0 +1,13 @@
+.logo {
+    background: #0e1a35;
+    padding-left: 42px;
+    padding-top: 29px;
+    padding-bottom: 35px;
+    width: 318px;
+    box-sizing: border-box;
+
+    &__img {
+        width: 182px;
+        height: 52px;
+    }
+}

@@ -1,0 +1,41 @@
+div(class="chart-sales card")
+    header(class="chart-sales__header")
+        h2(class="chart-sales__title") Total sales
+        div(class="chart-sales__actions")
+            button(class="button button--circle chart-sales__button chart-sales__button--edit" type="button")
+                img(class="chart-sales__button-img" src="images/small-img/edit.jpg" alt="Edit")
+            button(class="button button--circle chart-sales__button chart-sales__button--delete" type="button")
+                img(class="chart-sales__button-img" src="images/small-img/delete.jpg" alt="Delete")
+
+    div(class="chart-sales__content")
+        div(class="chart-sales__list")
+            include ../../_blocks/chart-sales-item/chart-sales-item.pug
+            -
+                var sales = [
+                    {
+                        id: "direct",
+                        percent: "45%",
+                        percentColor: "blue",
+                        amount: "2,300$",
+                        title: "Direct Sales",
+                    },
+
+                    {
+                        id: "channel",
+                        percent: "20%",
+                        percentColor: "violet",
+                        amount: "980$",
+                        title: "Channel Sales",
+                    },
+
+                    {
+                        id: "channel-second",
+                        percent: "25%",
+                        percentColor: "pink",
+                        amount: "1,250$",
+                        title: "Channel Sales",
+                    },
+                ]
+
+            each item in sales
+                +chart-sales-item(item)

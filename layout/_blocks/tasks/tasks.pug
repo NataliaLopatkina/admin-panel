@@ -1,0 +1,43 @@
+section(class="tasks card")
+    header(class="information__item-header tasks__header")
+        h3(class="tasks__title information__item-title") Tasks
+        div(class="tasks__quality")
+            span(class="badge") 5
+            span(class="badge badge--delay") 2
+    div(class="tasks__list")
+        include ../../_blocks/tasks-item/tasks-item.pug
+        -
+            var tasks = [
+                {
+                    text: "N",
+                    title: "New website for Symu.co",
+                    img: "time-delay",
+                    time: "5 days delays",
+                    typeTime: "delay",
+                },
+
+                {
+                    text: "F",
+                    title: "Free business PSD Template",
+                    img: "time-delay",
+                    time: "2 days delays",
+                    typeTime: "delay",
+                },
+
+                {
+                    text: "N",
+                    title: "New logo for JCD.pl",
+                    img: "time",
+                    time: "5 days left",
+                },
+
+                {
+                    text: "F",
+                    title: "Free Icons Set vol. 3",
+                    img: "time",
+                    time: "10 days left",
+                },
+            ]
+
+        each item in tasks
+            +tasks-item(item)

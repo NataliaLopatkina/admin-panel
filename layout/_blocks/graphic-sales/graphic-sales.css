@@ -1,0 +1,82 @@
+/* Graphic-sales */
+
+.graphic-sales {
+    width: 39%;
+    height: 469px;
+    margin-right: 43px;
+    box-sizing: border-box;
+}
+
+/* Circle */
+
+.graphic-sales svg defs + rect + g + g rect + g circle {
+    fill: #25396e;
+    r: 6;
+}
+
+.graphic-sales svg defs + rect + g + g rect + g + g circle {
+    fill: #5584ff;
+    r: 6;
+}
+
+.graphic-sales svg defs + rect + g + g rect + g + g + g circle {
+    fill: #4b74e0;
+    r: 6;
+}
+
+.graphic-sales svg defs + rect + g + g rect + g + g + g + g circle {
+    fill: #3755a4;
+    r: 6;
+}
+
+.graphic-sales svg defs + rect + g + g rect + g + g + g + g + g circle {
+    fill: #4164c2;
+    r: 6;
+}
+
+/* Graphic */
+
+.graphic-sales svg defs + rect + g + g + g path {
+    fill: #4b74e0;
+    stroke: #4b74e0;
+}
+
+.graphic-sales svg defs + rect + g + g + g text {
+    display: none;
+}
+
+.graphic-sales svg defs + rect + g + g + g + g path {
+    fill: #4164c2;
+    stroke: #4164c2;
+}
+
+.graphic-sales svg defs + rect + g + g + g + g text {
+    display: none;
+}
+ 
+.graphic-sales svg defs + rect + g + g + g + g + g path {
+    fill: #5584ff;
+    stroke: #5584ff;
+}
+
+.graphic-sales svg defs + rect + g + g + g + g + g text {
+    display: none;
+}
+
+.graphic-sales svg defs + rect + g + g + g + g + g + g path {
+    fill: #25396e;
+    stroke: #25396e;
+}
+
+.graphic-sales svg defs + rect + g + g + g + g + g + g text {
+    display: none;
+}
+
+.graphic-sales svg defs + rect + g + g + g + g + g + g + g path {
+    fill: #3755a4;
+    stroke: #3755a4;
+}
+
+.graphic-sales svg defs + rect + g + g + g + g + g + g + g text {
+    display: none;
+}

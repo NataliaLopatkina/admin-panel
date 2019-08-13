@@ -1,0 +1,11 @@
+@import "../logo-authorization/logo-authorization.css";
+@import "../nav-authorization/nav-authorization.css";
+
+.header-authorization {
+    margin-top: 225px;
+    background-color: #0e1a35;
+
+    &__content {
+        padding: 37px 61px 45px 45px;
+    }
+}

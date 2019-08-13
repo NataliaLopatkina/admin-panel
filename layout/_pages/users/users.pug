@@ -1,0 +1,13 @@
+extends ../../_blocks/template/template.pug
+
+block data
+    -
+        var data = {
+            navPanel: {
+                activeItem: "Users",
+            },
+        }
+
+block content
+    div(class="box content content--users")
+        include ../../_blocks/users/users.pug

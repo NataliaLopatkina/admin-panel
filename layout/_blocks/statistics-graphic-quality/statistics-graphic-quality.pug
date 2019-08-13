@@ -1,0 +1,6 @@
+mixin statistics-graphic-quality(item)
+    div(class="statistics-graphic-quality")
+        p(class="statistics-graphic-quality__text-block")
+            span(class="statistics-graphic-quality__value") !{item.value}
+            span(class="statistics-graphic-quality__title") !{item.title}
+        img(class="statistics-graphic-quality__img" src="images/graphics/" + item.img + ".png" alt="Graphic")

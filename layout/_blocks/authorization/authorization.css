@@ -1,0 +1,105 @@
+@import "../button/button.css";
+
+.authorization {
+    padding-top: 86px;
+    text-align: center;
+    box-shadow: 0 0 139px rgba(147, 161, 185, 0.59);
+    background-color: #f6f7fa;
+    box-sizing: border-box;
+    padding-bottom: 222px;
+
+    @media (--XS) {
+        margin-bottom: 0;
+    }
+
+    &__title {
+        font-size: 48px;
+        font-weight: 300;
+        color: #8492af;
+        margin-bottom: 119px;
+    }
+
+    &__title-color {
+        color: #5384ff;
+    }
+
+    &__form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    &__field-text {
+        font-size: 24px;
+        font-weight: 300;
+        color: #8492af;
+        width: 577px;
+        padding-left: 67px;
+        box-sizing: border-box;
+        border: none;
+        outline: none;
+        background: transparent;
+        border-bottom: 1px solid rgba(52, 57, 69, 0.3);
+        padding-bottom: 14px;
+
+        @media (--S) {
+            width: 100%;
+        }
+
+        /* @media (--XS) {
+            margin-left: 10px;
+            margin-right: 10px;
+        } */
+
+        &::placeholder {
+            color: #8492af;
+        }
+    }
+
+    &__field {
+        position: relative;
+
+        @media (--XS) {
+            margin-left :10px;
+            margin-right :10px;
+        }
+    }
+
+    &__field--name {
+        margin-bottom: 57px;
+        
+        &:before {
+            position: absolute;
+            content: url("../images/small-img/user.png");
+            top: -2px;
+            left: 8px;
+        }
+    }
+
+    &__field--password {
+        margin-bottom: 125px;
+
+        &:before {
+            position: absolute;
+            content: url("../images/small-img/password.png");
+            left: 9px;
+        }
+    }
+
+    &__button {
+        padding: 22px 165px;
+        position: relative;
+
+        @media(--XS) {
+            padding: 15px 100px;
+        }
+    }
+
+    &__button-img {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        margin: auto;
+        right: 50px;
+    }
+}

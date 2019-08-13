@@ -1,0 +1,31 @@
+.statistics-graphic-quality {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 64px 77px 85px 88px;
+    border-bottom: 1px solid rgba(132, 146, 175, 0.3);
+
+    &:last-child {
+        border-bottom: none;
+    }
+
+    &__text-block {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 17px;
+    }
+
+    &__value {
+        font-size: 36px;
+        font-weight: 700;
+        color: #8492af;
+        margin-bottom: 3px;
+    }
+
+    &__title {
+        font-size: 20px;
+        font-weight: 300;
+        color: #8492af;
+    }
+}

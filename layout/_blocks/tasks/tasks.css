@@ -1,0 +1,12 @@
+@import "../badge/badge.css";
+@import "../tasks-item/tasks-item.css";
+
+.tasks {
+
+    &__quality {
+        width: 102px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}

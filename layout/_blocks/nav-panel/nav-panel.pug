@@ -1,0 +1,51 @@
+mixin nav-panel(activeItem)
+    nav(class="nav-panel")
+        ul(class="nav-panel__list")
+            - 
+                var links = [
+                    {
+                        icon: "home",
+                        link: "Home",
+                        href: "home",
+                    },
+
+                    {
+                        icon: "workflow",
+                        link: "Workflow",
+                        href: "workflow",
+                    },
+
+                    {
+                        icon: "statistics",
+                        link: "Statistics",
+                        href: "statistics",
+                    },
+
+                    {
+                        icon: "calendar",
+                        link: "Calendar",
+                        href: "calendar",
+                    },
+
+                    {
+                        icon: "users",
+                        link: "Users",
+                        href: "users",
+                    },
+
+                    {
+                        icon: "settings",
+                        link: "Settings",
+                        href: "#5",
+                    },
+                ]
+
+            each item, index in links
+
+                - var modActive = ""
+                if activeItem == item.link
+                    - modActive = " nav-panel__item--active"
+
+                li(class="nav-panel__item" + modActive)
+                    img(class="nav-panel__icon" src="images/small-img/" + item.icon + ".svg" alt="Icon nav panel")
+                    a(href=item.href + ".html" class="nav-panel__link") !{item.link}

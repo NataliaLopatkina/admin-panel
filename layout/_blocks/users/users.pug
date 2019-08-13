@@ -1,0 +1,110 @@
+div(class="users")
+    div(class="users__header content__header")
+        div(class="users__title-content")
+            h1(class="users__title") Users 
+                span(class="users__quality") (128)
+        div(class="users__select-content")
+            form(class="users__form" action="#5" method="post")
+                div(class="content__header-container-select")
+                    select(class="content__header-select users__select")
+                        option(class="users__option") Sort: Active first
+                        option(class="users__option") Sort: Active first
+                        option(class="users__option") Sort: Active first
+
+    div(class="users__body")
+        table(class="users-table users__list")
+            tr(class="users-table__tr")
+                th(class="users-table__th") Name
+                th(class="users-table__th users-table__th--activity") Last activity
+                th(class="users-table__th users-table__th--mail") Mail
+                th(class="users-table__th users-table__th--phone") Phone
+                th(class="users-table__th")
+
+            include ../../_blocks/user-information/user-information.pug
+            - 
+                var users = [
+                    {
+                        photo: "photo-5",
+                        name: "John Doe",
+                        profession: "CEO",
+                        online: "online",
+                        img: "online",
+                        text: "Online now!",
+                        mail: "johndoe@design.com",
+                        phoneLink: "(000)111222333",
+                        phone: "(000) 111 222 333",
+                    },
+
+                    {
+                        photo: "photo-6",
+                        name: "Nina Jones",
+                        profession: "UX Designer",
+                        online: "online",
+                        img: "online",
+                        text: "Online now!",
+                        mail: "ninajones@design.com",
+                        phoneLink: "(000)111222333",
+                        phone: "(000) 111 222 333",
+                    },
+
+                    {
+                        photo: "photo-7",
+                        name: "Alex Smith",
+                        profession: "Web Designer",
+                        online: "online",
+                        img: "online",
+                        text: "Online now!",
+                        mail: "alexsmith@design.com",
+                        phoneLink: "(000)111222333",
+                        phone: "(000) 111 222 333",
+                    },
+
+                    {
+                        photo: "photo-8",
+                        name: "Ann Clooney",
+                        profession: "Account Manager",
+                        img: "offline",
+                        text: "20 minutes ago",
+                        mail: "annclooney@design.com",
+                        phoneLink: "(000)111222333",
+                        phone: "(000) 111 222 333",
+                    },
+
+                    {
+                        photo: "photo-9",
+                        name: "Patric Smith",
+                        profession: "Project Manager",
+                        img: "offline",
+                        text: "40 minutes ago",
+                        mail: "patricksmith@design.com",
+                        phoneLink: "(000)111222333",
+                        phone: "(000) 111 222 333",
+                    },
+
+                    {
+                        photo: "photo-10",
+                        name: "Nicky Hunt",
+                        profession: "Product Designer",
+                        img: "offline",
+                        text: "1 hour ago",
+                        mail: "nickyhunt@design.com",
+                        phoneLink: "(000)111222333",
+                        phone: "(000) 111 222 333",
+                    },
+
+                    {
+                        photo: "photo-11",
+                        name: "Jane Doe",
+                        profession: "Graphic Designer",
+                        img: "offline",
+                        text: "2 days ago",
+                        mail: "janedoe@design.com",
+                        phoneLink: "(000)111222333",
+                        phone: "(000) 111 222 333",
+                    },
+                ]
+
+            each item in users
+                +user-information(item)
+
+        include ../../_blocks/pagination/pagination.pug

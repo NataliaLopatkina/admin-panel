@@ -1,0 +1,43 @@
+.graphic-active-users {
+    width: 887px;
+    height: 469px;
+
+    &__button {
+        cy: 54;
+        r: 24;
+        stroke-width: 1px;
+        stroke: #d8dbe2;
+        fill: none;
+        cursor: pointer;
+
+        &--delete {
+            cx: calc(100% - 58px);
+        }
+
+        &--edit {
+            cx: calc(100% - 130px);
+        }
+    }
+
+    &__button-img {
+        position: absolute;
+        z-index: 1000;
+    }
+}
+
+.graphic-active-users text[text-anchor=middle] {
+    display: none;
+}
+
+.graphic-active-users text[text-anchor=end] {
+    font-weight: 500;
+    fill: #d8dbe2;
+}
+
+.graphic-active-users g[clip-path] g:nth-child(3) path {
+    stroke-width: 7px;
+}
+
+.graphic-active-users g[clip-path] g:nth-child(2) rect {
+    fill: #dadee7;
+}

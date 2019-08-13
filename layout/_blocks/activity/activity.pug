@@ -1,0 +1,44 @@
+section(class="activity card")
+    header(class="information__item-header activity__header")
+        h3(class="information__item-title activity__title") Activity
+        span(class="badge") 10
+    div(class="activity__list")
+        include ../../_blocks/activity-item/activity-item.pug
+        -
+            var activity = [
+                {
+                    photo: "photo-1",
+                    name: "Nina Jones",
+                    text: "added a new project",
+                    title: "Free UI Kit",
+                    time: "Just now",
+                },
+
+                {
+                    photo: "photo-2",
+                    name: "James Smith",
+                    text: "commented project",
+                    title: "Free PSD Template",
+                    time: "40 minutes ago",
+                },
+
+                {
+                    photo: "photo-3",
+                    name: "Alex Clooney",
+                    text: "completed task",
+                    title: "Symu Website",
+                    time: "1 hour ago",
+                },
+
+                {
+                    photo: "photo-4",
+                    name: "Alexandra Spears",
+                    text: "added a new project",
+                    title: "Free PSD (...)",
+                    time: "3 hours ago",
+                },
+            ]
+
+        each item in activity
+            +activity-item(item)    
+

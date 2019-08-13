@@ -1,0 +1,18 @@
+nav(class="nav-user")
+    ul(class="nav-user__list")
+        li(class="nav-user__item nav-user__item--add-project")
+            button(class="button button--text button--background button--ellipse button--size-less nav-user__button" type="button") Add project
+                img(class="nav-user__button-img" src="images/small-img/plus.png" alt="Add")
+        li(class="nav-user__item nav-user__item--messages")
+            a(href="#5" class="nav-user__messages-link")
+                img(class="nav-user__messages-img" src="images/small-img/messages.svg" alt="Messages")
+        li(class="nav-user__item nav-user__item--notifications")
+            span(class="nav-user__quality") 3
+            button(class="button nav-user__notifications-button")
+                img(class="nav-user__notifications-img" src="images/small-img/notifications.svg" alt="Notifications")
+        li(class="nav-user__item nav-user__item--profile")
+            a(href="#5" class="nav-user__profile-link")
+                img(class="nav-user__profile-photo" src="images/user/profile.jpg" alt="User")
+            button(class="nav-user__button-arrow" type="button")
+                svg(class="nav-user__arrow-img")
+                    use(xlink:href="images/svg-sprite/svg-sprite.svg#profile-arrow")

@@ -1,0 +1,25 @@
+@import "../users-table/users-table.css";
+@import "../pagination/pagination.css";
+
+.users {
+    &__header {
+        margin-bottom: 24px;
+    }
+
+    &__title {
+        font-size: 36px;
+        color: #0e1a35;
+    }
+
+    &__quality {
+        color: #8492af;
+    }
+
+    .users__select {
+        padding-right: 80px;
+    }
+    
+    &__list {
+        margin-bottom: 50px;
+    }
+}

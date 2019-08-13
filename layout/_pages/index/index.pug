@@ -1,0 +1,16 @@
+doctype html
+html(lang="en")
+    head
+        meta(charset="utf-8")
+        meta(name="viewport", content="initial-scale=1.0, width=device-width")
+        title Admin panel
+        link(href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&amp;subset=cyrillic" rel="stylesheet")
+        link(rel="stylesheet" href="stylesheets/common.css")
+
+    body
+        include ../../_blocks/header-authorization/header-authorization.pug
+
+        main(class="main-authorization box-authorization")
+            include ../../_blocks/authorization/authorization.pug
+            
+        script(src="scripts/common.js")

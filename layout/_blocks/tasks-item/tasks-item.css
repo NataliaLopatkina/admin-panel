@@ -1,0 +1,56 @@
+.tasks-item {
+    display: flex;
+    align-items: flex-start;
+    border-top: 1px solid rgba(132, 146, 175, 0.3);
+    padding: 28px 47px 30px 35px;
+
+    &__profile {
+        margin-top: 3px;
+        margin-right: 26px;
+    }
+
+    &__title {
+        font-size: 20px;
+        font-weight: 500;
+        color: #0e1a35;
+        letter-spacing: 0.28px;
+        margin-bottom: 9px;
+    }
+
+    &__block-time {
+        display: flex;
+        align-items: center;
+    }
+
+    &__img-time {
+        margin-right: 7px;
+    }
+
+    &__time {
+        font-size: 14px;
+        font-weight: 400;
+        color: #8492af;
+
+        &--delay {
+            color: #f83c7b;
+        }
+
+        &--completed {
+            color: #00bf1b;
+        }
+    }
+
+    &__actions {
+        margin-left: auto;
+        margin-top: 9px;
+    }
+
+    &--workflow {
+        padding: 32px 32px 34px 35px;
+        margin-bottom: 14px;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+}
